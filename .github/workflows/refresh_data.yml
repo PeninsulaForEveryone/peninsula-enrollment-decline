@@ -1,0 +1,61 @@
+name: Refresh data
+
+on:
+  # Run every Sunday at 06:00 UTC (Saturday evening PT — after APR data usually updates)
+  schedule:
+    - cron: "0 6 * * 0"
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force re-download (ignore cache)"
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write   # needed to commit viz_data.json back to the repo
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Raw files live in data/raw/ which is .gitignored.
+      # Restore cached raw files to avoid hammering CDE/HCD servers.
+      - name: Restore raw data cache
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: raw-data-${{ runner.os }}-${{ hashFiles('pipeline/config.py') }}
+          restore-keys: |
+            raw-data-${{ runner.os }}-
+
+      - name: Run pipeline
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python -m pipeline.run_all $FORCE_FLAG
+
+      - name: Commit updated viz_data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/viz_data.json
+          # Only commit if there's a change
+          git diff --cached --quiet || git commit -m "chore: refresh viz_data.json [$(date -u +%Y-%m-%d)]"
+          git push

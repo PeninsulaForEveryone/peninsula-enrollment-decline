@@ -1,0 +1,19 @@
+# Raw downloaded files — large, reproducible, don't commit
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Keep processed outputs (viz_data.json is committed; parquet files are large)
+data/processed/*.parquet
+data/processed/*.csv
+
+# Keep the JSON
+!data/processed/viz_data.json
+!docs/data/viz_data.json

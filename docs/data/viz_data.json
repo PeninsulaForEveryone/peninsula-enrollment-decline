@@ -1,0 +1,2929 @@
+{
+  "meta": {
+    "generated_at": "2026-05-14T22:33:44.925796+00:00",
+    "enrollment_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "housing_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "index_year": 2018,
+    "county": "San Mateo",
+    "notes": [
+      "Enrollment excludes TK for consistency across the 2014-2023 series.",
+      "Housing data: HCD APR (2018+), Census BPS (pre-2018, county-aggregate only).",
+      "APR data is self-reported; see Possibility Lab (2024) for known quality issues.",
+      "Crosswalk between HCD jurisdictions and CDE districts is manually curated."
+    ]
+  },
+  "districts": [
+    {
+      "district_code": "68858",
+      "district_name": "Bayshore Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 678,
+          "indexed": 99.12
+        },
+        {
+          "year": 2016,
+          "total": 676,
+          "indexed": 98.83
+        },
+        {
+          "year": 2017,
+          "total": 652,
+          "indexed": 95.32
+        },
+        {
+          "year": 2018,
+          "total": 684,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 680,
+          "indexed": 99.42
+        },
+        {
+          "year": 2020,
+          "total": 678,
+          "indexed": 99.12
+        },
+        {
+          "year": 2021,
+          "total": 644,
+          "indexed": 94.15
+        },
+        {
+          "year": 2022,
+          "total": 614,
+          "indexed": 89.77
+        },
+        {
+          "year": 2023,
+          "total": 574,
+          "indexed": 83.92
+        },
+        {
+          "year": 2024,
+          "total": 337,
+          "indexed": 49.27
+        },
+        {
+          "year": 2025,
+          "total": 342,
+          "indexed": 50.0
+        },
+        {
+          "year": 2026,
+          "total": 314,
+          "indexed": 45.91
+        }
+      ],
+      "peak_year": 2018,
+      "peak_enrollment": 684,
+      "last_year": 2026,
+      "last_enrollment": 314,
+      "pct_change_since_peak": -54.09,
+      "pct_change_since_index": -54.09
+    },
+    {
+      "district_code": "68866",
+      "district_name": "Belmont-Redwood Shores Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 6756,
+          "indexed": 89.6
+        },
+        {
+          "year": 2016,
+          "total": 7038,
+          "indexed": 93.34
+        },
+        {
+          "year": 2017,
+          "total": 7286,
+          "indexed": 96.63
+        },
+        {
+          "year": 2018,
+          "total": 7540,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 7512,
+          "indexed": 99.63
+        },
+        {
+          "year": 2020,
+          "total": 7470,
+          "indexed": 99.07
+        },
+        {
+          "year": 2021,
+          "total": 7292,
+          "indexed": 96.71
+        },
+        {
+          "year": 2022,
+          "total": 7018,
+          "indexed": 93.08
+        },
+        {
+          "year": 2023,
+          "total": 6984,
+          "indexed": 92.63
+        },
+        {
+          "year": 2024,
+          "total": 4019,
+          "indexed": 53.3
+        },
+        {
+          "year": 2025,
+          "total": 3914,
+          "indexed": 51.91
+        },
+        {
+          "year": 2026,
+          "total": 3881,
+          "indexed": 51.47
+        }
+      ],
+      "peak_year": 2018,
+      "peak_enrollment": 7540,
+      "last_year": 2026,
+      "last_enrollment": 3881,
+      "pct_change_since_peak": -48.53,
+      "pct_change_since_index": -48.53
+    },
+    {
+      "district_code": "68874",
+      "district_name": "Brisbane Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 812,
+          "indexed": 103.31
+        },
+        {
+          "year": 2016,
+          "total": 738,
+          "indexed": 93.89
+        },
+        {
+          "year": 2017,
+          "total": 802,
+          "indexed": 102.04
+        },
+        {
+          "year": 2018,
+          "total": 786,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 806,
+          "indexed": 102.54
+        },
+        {
+          "year": 2020,
+          "total": 814,
+          "indexed": 103.56
+        },
+        {
+          "year": 2021,
+          "total": 816,
+          "indexed": 103.82
+        },
+        {
+          "year": 2022,
+          "total": 784,
+          "indexed": 99.75
+        },
+        {
+          "year": 2023,
+          "total": 784,
+          "indexed": 99.75
+        },
+        {
+          "year": 2024,
+          "total": 477,
+          "indexed": 60.69
+        },
+        {
+          "year": 2025,
+          "total": 484,
+          "indexed": 61.58
+        },
+        {
+          "year": 2026,
+          "total": 482,
+          "indexed": 61.32
+        }
+      ],
+      "peak_year": 2021,
+      "peak_enrollment": 816,
+      "last_year": 2026,
+      "last_enrollment": 482,
+      "pct_change_since_peak": -40.93,
+      "pct_change_since_index": -38.68
+    },
+    {
+      "district_code": "68882",
+      "district_name": "Burlingame Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 5726,
+          "indexed": 95.43
+        },
+        {
+          "year": 2016,
+          "total": 5866,
+          "indexed": 97.77
+        },
+        {
+          "year": 2017,
+          "total": 5914,
+          "indexed": 98.57
+        },
+        {
+          "year": 2018,
+          "total": 6000,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 6074,
+          "indexed": 101.23
+        },
+        {
+          "year": 2020,
+          "total": 6168,
+          "indexed": 102.8
+        },
+        {
+          "year": 2021,
+          "total": 5980,
+          "indexed": 99.67
+        },
+        {
+          "year": 2022,
+          "total": 5790,
+          "indexed": 96.5
+        },
+        {
+          "year": 2023,
+          "total": 5794,
+          "indexed": 96.57
+        },
+        {
+          "year": 2024,
+          "total": 3320,
+          "indexed": 55.33
+        },
+        {
+          "year": 2025,
+          "total": 3380,
+          "indexed": 56.33
+        },
+        {
+          "year": 2026,
+          "total": 3419,
+          "indexed": 56.98
+        }
+      ],
+      "peak_year": 2020,
+      "peak_enrollment": 6168,
+      "last_year": 2026,
+      "last_enrollment": 3419,
+      "pct_change_since_peak": -44.57,
+      "pct_change_since_index": -43.02
+    },
+    {
+      "district_code": "68890",
+      "district_name": "Cabrillo Unified",
+      "type": "unified",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 6148,
+          "indexed": 104.63
+        },
+        {
+          "year": 2016,
+          "total": 6122,
+          "indexed": 104.19
+        },
+        {
+          "year": 2017,
+          "total": 6030,
+          "indexed": 102.62
+        },
+        {
+          "year": 2018,
+          "total": 5876,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 5832,
+          "indexed": 99.25
+        },
+        {
+          "year": 2020,
+          "total": 5832,
+          "indexed": 99.25
+        },
+        {
+          "year": 2021,
+          "total": 5438,
+          "indexed": 92.55
+        },
+        {
+          "year": 2022,
+          "total": 5216,
+          "indexed": 88.77
+        },
+        {
+          "year": 2023,
+          "total": 4992,
+          "indexed": 84.96
+        },
+        {
+          "year": 2024,
+          "total": 2663,
+          "indexed": 45.32
+        },
+        {
+          "year": 2025,
+          "total": 2562,
+          "indexed": 43.6
+        },
+        {
+          "year": 2026,
+          "total": 2504,
+          "indexed": 42.61
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 6148,
+      "last_year": 2026,
+      "last_enrollment": 2504,
+      "pct_change_since_peak": -59.27,
+      "pct_change_since_index": -57.39
+    },
+    {
+      "district_code": "68908",
+      "district_name": "Hillsborough City Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 2764,
+          "indexed": 107.55
+        },
+        {
+          "year": 2016,
+          "total": 2666,
+          "indexed": 103.74
+        },
+        {
+          "year": 2017,
+          "total": 2662,
+          "indexed": 103.58
+        },
+        {
+          "year": 2018,
+          "total": 2570,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 2452,
+          "indexed": 95.41
+        },
+        {
+          "year": 2020,
+          "total": 2346,
+          "indexed": 91.28
+        },
+        {
+          "year": 2021,
+          "total": 2322,
+          "indexed": 90.35
+        },
+        {
+          "year": 2022,
+          "total": 2284,
+          "indexed": 88.87
+        },
+        {
+          "year": 2023,
+          "total": 2308,
+          "indexed": 89.81
+        },
+        {
+          "year": 2024,
+          "total": 1263,
+          "indexed": 49.14
+        },
+        {
+          "year": 2025,
+          "total": 1241,
+          "indexed": 48.29
+        },
+        {
+          "year": 2026,
+          "total": 1198,
+          "indexed": 46.61
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 2764,
+      "last_year": 2026,
+      "last_enrollment": 1198,
+      "pct_change_since_peak": -56.66,
+      "pct_change_since_index": -53.39
+    },
+    {
+      "district_code": "68916",
+      "district_name": "Jefferson Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 12678,
+          "indexed": 105.44
+        },
+        {
+          "year": 2016,
+          "total": 12570,
+          "indexed": 104.54
+        },
+        {
+          "year": 2017,
+          "total": 12432,
+          "indexed": 103.39
+        },
+        {
+          "year": 2018,
+          "total": 12024,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 12168,
+          "indexed": 101.2
+        },
+        {
+          "year": 2020,
+          "total": 11920,
+          "indexed": 99.14
+        },
+        {
+          "year": 2021,
+          "total": 11878,
+          "indexed": 98.79
+        },
+        {
+          "year": 2022,
+          "total": 11098,
+          "indexed": 92.3
+        },
+        {
+          "year": 2023,
+          "total": 10576,
+          "indexed": 87.96
+        },
+        {
+          "year": 2024,
+          "total": 5985,
+          "indexed": 49.78
+        },
+        {
+          "year": 2025,
+          "total": 6088,
+          "indexed": 50.63
+        },
+        {
+          "year": 2026,
+          "total": 6020,
+          "indexed": 50.07
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 12678,
+      "last_year": 2026,
+      "last_enrollment": 6020,
+      "pct_change_since_peak": -52.52,
+      "pct_change_since_index": -49.93
+    },
+    {
+      "district_code": "68924",
+      "district_name": "Jefferson Union High",
+      "type": "high_school",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 9812,
+          "indexed": 100.76
+        },
+        {
+          "year": 2016,
+          "total": 9852,
+          "indexed": 101.17
+        },
+        {
+          "year": 2017,
+          "total": 9724,
+          "indexed": 99.86
+        },
+        {
+          "year": 2018,
+          "total": 9738,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 9572,
+          "indexed": 98.3
+        },
+        {
+          "year": 2020,
+          "total": 9530,
+          "indexed": 97.86
+        },
+        {
+          "year": 2021,
+          "total": 9310,
+          "indexed": 95.6
+        },
+        {
+          "year": 2022,
+          "total": 8798,
+          "indexed": 90.35
+        },
+        {
+          "year": 2023,
+          "total": 8544,
+          "indexed": 87.74
+        },
+        {
+          "year": 2024,
+          "total": 4155,
+          "indexed": 42.67
+        },
+        {
+          "year": 2025,
+          "total": 4173,
+          "indexed": 42.85
+        },
+        {
+          "year": 2026,
+          "total": 4102,
+          "indexed": 42.12
+        }
+      ],
+      "peak_year": 2016,
+      "peak_enrollment": 9852,
+      "last_year": 2026,
+      "last_enrollment": 4102,
+      "pct_change_since_peak": -58.36,
+      "pct_change_since_index": -57.88
+    },
+    {
+      "district_code": "68940",
+      "district_name": "La Honda-Pescadero Unified",
+      "type": "unified",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 614,
+          "indexed": 106.23
+        },
+        {
+          "year": 2016,
+          "total": 600,
+          "indexed": 103.81
+        },
+        {
+          "year": 2017,
+          "total": 574,
+          "indexed": 99.31
+        },
+        {
+          "year": 2018,
+          "total": 578,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 580,
+          "indexed": 100.35
+        },
+        {
+          "year": 2020,
+          "total": 578,
+          "indexed": 100.0
+        },
+        {
+          "year": 2021,
+          "total": 512,
+          "indexed": 88.58
+        },
+        {
+          "year": 2022,
+          "total": 488,
+          "indexed": 84.43
+        },
+        {
+          "year": 2023,
+          "total": 464,
+          "indexed": 80.28
+        },
+        {
+          "year": 2024,
+          "total": 259,
+          "indexed": 44.81
+        },
+        {
+          "year": 2025,
+          "total": 272,
+          "indexed": 47.06
+        },
+        {
+          "year": 2026,
+          "total": 264,
+          "indexed": 45.67
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 614,
+      "last_year": 2026,
+      "last_enrollment": 264,
+      "pct_change_since_peak": -57.0,
+      "pct_change_since_index": -54.33
+    },
+    {
+      "district_code": "68957",
+      "district_name": "Las Lomitas Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 2498,
+          "indexed": 101.05
+        },
+        {
+          "year": 2016,
+          "total": 2482,
+          "indexed": 100.4
+        },
+        {
+          "year": 2017,
+          "total": 2514,
+          "indexed": 101.7
+        },
+        {
+          "year": 2018,
+          "total": 2472,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 2276,
+          "indexed": 92.07
+        },
+        {
+          "year": 2020,
+          "total": 2190,
+          "indexed": 88.59
+        },
+        {
+          "year": 2021,
+          "total": 2000,
+          "indexed": 80.91
+        },
+        {
+          "year": 2022,
+          "total": 1944,
+          "indexed": 78.64
+        },
+        {
+          "year": 2023,
+          "total": 1986,
+          "indexed": 80.34
+        },
+        {
+          "year": 2024,
+          "total": 1161,
+          "indexed": 46.97
+        },
+        {
+          "year": 2025,
+          "total": 1138,
+          "indexed": 46.04
+        },
+        {
+          "year": 2026,
+          "total": 1142,
+          "indexed": 46.2
+        }
+      ],
+      "peak_year": 2017,
+      "peak_enrollment": 2514,
+      "last_year": 2026,
+      "last_enrollment": 1142,
+      "pct_change_since_peak": -54.57,
+      "pct_change_since_index": -53.8
+    },
+    {
+      "district_code": "68965",
+      "district_name": "Menlo Park City Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 5182,
+          "indexed": 97.77
+        },
+        {
+          "year": 2016,
+          "total": 5196,
+          "indexed": 98.04
+        },
+        {
+          "year": 2017,
+          "total": 5348,
+          "indexed": 100.91
+        },
+        {
+          "year": 2018,
+          "total": 5300,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 5220,
+          "indexed": 98.49
+        },
+        {
+          "year": 2020,
+          "total": 5182,
+          "indexed": 97.77
+        },
+        {
+          "year": 2021,
+          "total": 4986,
+          "indexed": 94.08
+        },
+        {
+          "year": 2022,
+          "total": 4826,
+          "indexed": 91.06
+        },
+        {
+          "year": 2023,
+          "total": 4812,
+          "indexed": 90.79
+        },
+        {
+          "year": 2024,
+          "total": 2730,
+          "indexed": 51.51
+        },
+        {
+          "year": 2025,
+          "total": 2685,
+          "indexed": 50.66
+        },
+        {
+          "year": 2026,
+          "total": 2622,
+          "indexed": 49.47
+        }
+      ],
+      "peak_year": 2017,
+      "peak_enrollment": 5348,
+      "last_year": 2026,
+      "last_enrollment": 2622,
+      "pct_change_since_peak": -50.97,
+      "pct_change_since_index": -50.53
+    },
+    {
+      "district_code": "68973",
+      "district_name": "Millbrae Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 4380,
+          "indexed": 101.77
+        },
+        {
+          "year": 2016,
+          "total": 4294,
+          "indexed": 99.77
+        },
+        {
+          "year": 2017,
+          "total": 4244,
+          "indexed": 98.61
+        },
+        {
+          "year": 2018,
+          "total": 4304,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 4174,
+          "indexed": 96.98
+        },
+        {
+          "year": 2020,
+          "total": 4146,
+          "indexed": 96.33
+        },
+        {
+          "year": 2021,
+          "total": 3950,
+          "indexed": 91.78
+        },
+        {
+          "year": 2022,
+          "total": 3766,
+          "indexed": 87.5
+        },
+        {
+          "year": 2023,
+          "total": 3690,
+          "indexed": 85.73
+        },
+        {
+          "year": 2024,
+          "total": 2065,
+          "indexed": 47.98
+        },
+        {
+          "year": 2025,
+          "total": 2107,
+          "indexed": 48.95
+        },
+        {
+          "year": 2026,
+          "total": 2161,
+          "indexed": 50.21
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 4380,
+      "last_year": 2026,
+      "last_enrollment": 2161,
+      "pct_change_since_peak": -50.66,
+      "pct_change_since_index": -49.79
+    },
+    {
+      "district_code": "68932",
+      "district_name": "Pacifica",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 5570,
+          "indexed": 101.72
+        },
+        {
+          "year": 2016,
+          "total": 5534,
+          "indexed": 101.06
+        },
+        {
+          "year": 2017,
+          "total": 5496,
+          "indexed": 100.37
+        },
+        {
+          "year": 2018,
+          "total": 5476,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 5432,
+          "indexed": 99.2
+        },
+        {
+          "year": 2020,
+          "total": 5372,
+          "indexed": 98.1
+        },
+        {
+          "year": 2021,
+          "total": 5226,
+          "indexed": 95.43
+        },
+        {
+          "year": 2022,
+          "total": 4910,
+          "indexed": 89.66
+        },
+        {
+          "year": 2023,
+          "total": 4752,
+          "indexed": 86.78
+        },
+        {
+          "year": 2024,
+          "total": 2737,
+          "indexed": 49.98
+        },
+        {
+          "year": 2025,
+          "total": 2652,
+          "indexed": 48.43
+        },
+        {
+          "year": 2026,
+          "total": 2531,
+          "indexed": 46.22
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 5570,
+      "last_year": 2026,
+      "last_enrollment": 2531,
+      "pct_change_since_peak": -54.56,
+      "pct_change_since_index": -53.78
+    },
+    {
+      "district_code": "68981",
+      "district_name": "Portola Valley Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 1138,
+          "indexed": 105.96
+        },
+        {
+          "year": 2016,
+          "total": 1110,
+          "indexed": 103.35
+        },
+        {
+          "year": 2017,
+          "total": 1132,
+          "indexed": 105.4
+        },
+        {
+          "year": 2018,
+          "total": 1074,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 998,
+          "indexed": 92.92
+        },
+        {
+          "year": 2020,
+          "total": 964,
+          "indexed": 89.76
+        },
+        {
+          "year": 2021,
+          "total": 878,
+          "indexed": 81.75
+        },
+        {
+          "year": 2022,
+          "total": 818,
+          "indexed": 76.16
+        },
+        {
+          "year": 2023,
+          "total": 862,
+          "indexed": 80.26
+        },
+        {
+          "year": 2024,
+          "total": 504,
+          "indexed": 46.93
+        },
+        {
+          "year": 2025,
+          "total": 495,
+          "indexed": 46.09
+        },
+        {
+          "year": 2026,
+          "total": 513,
+          "indexed": 47.77
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 1138,
+      "last_year": 2026,
+      "last_enrollment": 513,
+      "pct_change_since_peak": -54.92,
+      "pct_change_since_index": -52.23
+    },
+    {
+      "district_code": "68999",
+      "district_name": "Ravenswood City Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 7418,
+          "indexed": 115.44
+        },
+        {
+          "year": 2016,
+          "total": 7148,
+          "indexed": 111.24
+        },
+        {
+          "year": 2017,
+          "total": 6836,
+          "indexed": 106.38
+        },
+        {
+          "year": 2018,
+          "total": 6426,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 6120,
+          "indexed": 95.24
+        },
+        {
+          "year": 2020,
+          "total": 5850,
+          "indexed": 91.04
+        },
+        {
+          "year": 2021,
+          "total": 5344,
+          "indexed": 83.16
+        },
+        {
+          "year": 2022,
+          "total": 4948,
+          "indexed": 77.0
+        },
+        {
+          "year": 2023,
+          "total": 4614,
+          "indexed": 71.8
+        },
+        {
+          "year": 2024,
+          "total": 2555,
+          "indexed": 39.76
+        },
+        {
+          "year": 2025,
+          "total": 2532,
+          "indexed": 39.4
+        },
+        {
+          "year": 2026,
+          "total": 2432,
+          "indexed": 37.85
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 7418,
+      "last_year": 2026,
+      "last_enrollment": 2432,
+      "pct_change_since_peak": -67.21,
+      "pct_change_since_index": -62.15
+    },
+    {
+      "district_code": "69005",
+      "district_name": "Redwood City Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 15874,
+          "indexed": 102.86
+        },
+        {
+          "year": 2016,
+          "total": 15852,
+          "indexed": 102.72
+        },
+        {
+          "year": 2017,
+          "total": 15636,
+          "indexed": 101.32
+        },
+        {
+          "year": 2018,
+          "total": 15432,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 15258,
+          "indexed": 98.87
+        },
+        {
+          "year": 2020,
+          "total": 14930,
+          "indexed": 96.75
+        },
+        {
+          "year": 2021,
+          "total": 14368,
+          "indexed": 93.11
+        },
+        {
+          "year": 2022,
+          "total": 13564,
+          "indexed": 87.9
+        },
+        {
+          "year": 2023,
+          "total": 13256,
+          "indexed": 85.9
+        },
+        {
+          "year": 2024,
+          "total": 7480,
+          "indexed": 48.47
+        },
+        {
+          "year": 2025,
+          "total": 7523,
+          "indexed": 48.75
+        },
+        {
+          "year": 2026,
+          "total": 7428,
+          "indexed": 48.13
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 15874,
+      "last_year": 2026,
+      "last_enrollment": 7428,
+      "pct_change_since_peak": -53.21,
+      "pct_change_since_index": -51.87
+    },
+    {
+      "district_code": "69013",
+      "district_name": "San Bruno Park Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 4810,
+          "indexed": 105.44
+        },
+        {
+          "year": 2016,
+          "total": 4724,
+          "indexed": 103.55
+        },
+        {
+          "year": 2017,
+          "total": 4586,
+          "indexed": 100.53
+        },
+        {
+          "year": 2018,
+          "total": 4562,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 4382,
+          "indexed": 96.05
+        },
+        {
+          "year": 2020,
+          "total": 4256,
+          "indexed": 93.29
+        },
+        {
+          "year": 2021,
+          "total": 4030,
+          "indexed": 88.34
+        },
+        {
+          "year": 2022,
+          "total": 3646,
+          "indexed": 79.92
+        },
+        {
+          "year": 2023,
+          "total": 3474,
+          "indexed": 76.15
+        },
+        {
+          "year": 2024,
+          "total": 1950,
+          "indexed": 42.74
+        },
+        {
+          "year": 2025,
+          "total": 2003,
+          "indexed": 43.91
+        },
+        {
+          "year": 2026,
+          "total": 1997,
+          "indexed": 43.77
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 4810,
+      "last_year": 2026,
+      "last_enrollment": 1997,
+      "pct_change_since_peak": -58.48,
+      "pct_change_since_index": -56.23
+    },
+    {
+      "district_code": "69021",
+      "district_name": "San Carlos Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 6078,
+          "indexed": 97.87
+        },
+        {
+          "year": 2016,
+          "total": 6180,
+          "indexed": 99.52
+        },
+        {
+          "year": 2017,
+          "total": 6130,
+          "indexed": 98.71
+        },
+        {
+          "year": 2018,
+          "total": 6210,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 5984,
+          "indexed": 96.36
+        },
+        {
+          "year": 2020,
+          "total": 5896,
+          "indexed": 94.94
+        },
+        {
+          "year": 2021,
+          "total": 5736,
+          "indexed": 92.37
+        },
+        {
+          "year": 2022,
+          "total": 5298,
+          "indexed": 85.31
+        },
+        {
+          "year": 2023,
+          "total": 5286,
+          "indexed": 85.12
+        },
+        {
+          "year": 2024,
+          "total": 3137,
+          "indexed": 50.52
+        },
+        {
+          "year": 2025,
+          "total": 3254,
+          "indexed": 52.4
+        },
+        {
+          "year": 2026,
+          "total": 3342,
+          "indexed": 53.82
+        }
+      ],
+      "peak_year": 2018,
+      "peak_enrollment": 6210,
+      "last_year": 2026,
+      "last_enrollment": 3342,
+      "pct_change_since_peak": -46.18,
+      "pct_change_since_index": -46.18
+    },
+    {
+      "district_code": "10413",
+      "district_name": "San Mateo County Office of Education",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 776,
+          "indexed": 133.56
+        },
+        {
+          "year": 2016,
+          "total": 620,
+          "indexed": 106.71
+        },
+        {
+          "year": 2017,
+          "total": 549,
+          "indexed": 94.49
+        },
+        {
+          "year": 2018,
+          "total": 581,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 643,
+          "indexed": 110.67
+        },
+        {
+          "year": 2020,
+          "total": 618,
+          "indexed": 106.37
+        },
+        {
+          "year": 2021,
+          "total": 490,
+          "indexed": 84.34
+        },
+        {
+          "year": 2022,
+          "total": 452,
+          "indexed": 77.8
+        },
+        {
+          "year": 2023,
+          "total": 366,
+          "indexed": 62.99
+        },
+        {
+          "year": 2024,
+          "total": 182,
+          "indexed": 31.33
+        },
+        {
+          "year": 2025,
+          "total": 188,
+          "indexed": 32.36
+        },
+        {
+          "year": 2026,
+          "total": 158,
+          "indexed": 27.19
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 776,
+      "last_year": 2026,
+      "last_enrollment": 158,
+      "pct_change_since_peak": -79.64,
+      "pct_change_since_index": -72.81
+    },
+    {
+      "district_code": "69047",
+      "district_name": "San Mateo Union High",
+      "type": "high_school",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 16642,
+          "indexed": 87.74
+        },
+        {
+          "year": 2016,
+          "total": 17252,
+          "indexed": 90.95
+        },
+        {
+          "year": 2017,
+          "total": 18208,
+          "indexed": 95.99
+        },
+        {
+          "year": 2018,
+          "total": 18968,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 19150,
+          "indexed": 100.96
+        },
+        {
+          "year": 2020,
+          "total": 19770,
+          "indexed": 104.23
+        },
+        {
+          "year": 2021,
+          "total": 19520,
+          "indexed": 102.91
+        },
+        {
+          "year": 2022,
+          "total": 19310,
+          "indexed": 101.8
+        },
+        {
+          "year": 2023,
+          "total": 18974,
+          "indexed": 100.03
+        },
+        {
+          "year": 2024,
+          "total": 9378,
+          "indexed": 49.44
+        },
+        {
+          "year": 2025,
+          "total": 9342,
+          "indexed": 49.25
+        },
+        {
+          "year": 2026,
+          "total": 9302,
+          "indexed": 49.04
+        }
+      ],
+      "peak_year": 2020,
+      "peak_enrollment": 19770,
+      "last_year": 2026,
+      "last_enrollment": 9302,
+      "pct_change_since_peak": -52.95,
+      "pct_change_since_index": -50.96
+    },
+    {
+      "district_code": "69039",
+      "district_name": "San Mateo-Foster City",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 20582,
+          "indexed": 100.86
+        },
+        {
+          "year": 2016,
+          "total": 20556,
+          "indexed": 100.74
+        },
+        {
+          "year": 2017,
+          "total": 20588,
+          "indexed": 100.89
+        },
+        {
+          "year": 2018,
+          "total": 20406,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 20346,
+          "indexed": 99.71
+        },
+        {
+          "year": 2020,
+          "total": 20180,
+          "indexed": 98.89
+        },
+        {
+          "year": 2021,
+          "total": 19318,
+          "indexed": 94.67
+        },
+        {
+          "year": 2022,
+          "total": 18016,
+          "indexed": 88.29
+        },
+        {
+          "year": 2023,
+          "total": 17558,
+          "indexed": 86.04
+        },
+        {
+          "year": 2024,
+          "total": 9945,
+          "indexed": 48.74
+        },
+        {
+          "year": 2025,
+          "total": 9926,
+          "indexed": 48.64
+        },
+        {
+          "year": 2026,
+          "total": 9708,
+          "indexed": 47.57
+        }
+      ],
+      "peak_year": 2017,
+      "peak_enrollment": 20588,
+      "last_year": 2026,
+      "last_enrollment": 9708,
+      "pct_change_since_peak": -52.85,
+      "pct_change_since_index": -52.43
+    },
+    {
+      "district_code": "69062",
+      "district_name": "Sequoia Union High",
+      "type": "high_school",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 19386,
+          "indexed": 96.73
+        },
+        {
+          "year": 2016,
+          "total": 19524,
+          "indexed": 97.42
+        },
+        {
+          "year": 2017,
+          "total": 19822,
+          "indexed": 98.9
+        },
+        {
+          "year": 2018,
+          "total": 20042,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 20492,
+          "indexed": 102.25
+        },
+        {
+          "year": 2020,
+          "total": 20350,
+          "indexed": 101.54
+        },
+        {
+          "year": 2021,
+          "total": 20514,
+          "indexed": 102.36
+        },
+        {
+          "year": 2022,
+          "total": 19914,
+          "indexed": 99.36
+        },
+        {
+          "year": 2023,
+          "total": 19452,
+          "indexed": 97.06
+        },
+        {
+          "year": 2024,
+          "total": 9741,
+          "indexed": 48.6
+        },
+        {
+          "year": 2025,
+          "total": 9505,
+          "indexed": 47.43
+        },
+        {
+          "year": 2026,
+          "total": 9321,
+          "indexed": 46.51
+        }
+      ],
+      "peak_year": 2021,
+      "peak_enrollment": 20514,
+      "last_year": 2026,
+      "last_enrollment": 9321,
+      "pct_change_since_peak": -54.56,
+      "pct_change_since_index": -53.49
+    },
+    {
+      "district_code": "69070",
+      "district_name": "South San Francisco Unified",
+      "type": "unified",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 16688,
+          "indexed": 104.84
+        },
+        {
+          "year": 2016,
+          "total": 16320,
+          "indexed": 102.53
+        },
+        {
+          "year": 2017,
+          "total": 16222,
+          "indexed": 101.91
+        },
+        {
+          "year": 2018,
+          "total": 15918,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 15470,
+          "indexed": 97.19
+        },
+        {
+          "year": 2020,
+          "total": 15378,
+          "indexed": 96.61
+        },
+        {
+          "year": 2021,
+          "total": 15028,
+          "indexed": 94.41
+        },
+        {
+          "year": 2022,
+          "total": 14636,
+          "indexed": 91.95
+        },
+        {
+          "year": 2023,
+          "total": 14432,
+          "indexed": 90.66
+        },
+        {
+          "year": 2024,
+          "total": 7770,
+          "indexed": 48.81
+        },
+        {
+          "year": 2025,
+          "total": 7664,
+          "indexed": 48.15
+        },
+        {
+          "year": 2026,
+          "total": 7624,
+          "indexed": 47.9
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 16688,
+      "last_year": 2026,
+      "last_enrollment": 7624,
+      "pct_change_since_peak": -54.31,
+      "pct_change_since_index": -52.1
+    },
+    {
+      "district_code": "69088",
+      "district_name": "Woodside Elementary",
+      "type": "elementary",
+      "enrollment": [
+        {
+          "year": 2015,
+          "total": 742,
+          "indexed": 102.77
+        },
+        {
+          "year": 2016,
+          "total": 710,
+          "indexed": 98.34
+        },
+        {
+          "year": 2017,
+          "total": 706,
+          "indexed": 97.78
+        },
+        {
+          "year": 2018,
+          "total": 722,
+          "indexed": 100.0
+        },
+        {
+          "year": 2019,
+          "total": 716,
+          "indexed": 99.17
+        },
+        {
+          "year": 2020,
+          "total": 676,
+          "indexed": 93.63
+        },
+        {
+          "year": 2021,
+          "total": 636,
+          "indexed": 88.09
+        },
+        {
+          "year": 2022,
+          "total": 636,
+          "indexed": 88.09
+        },
+        {
+          "year": 2023,
+          "total": 618,
+          "indexed": 85.6
+        },
+        {
+          "year": 2024,
+          "total": 367,
+          "indexed": 50.83
+        },
+        {
+          "year": 2025,
+          "total": 385,
+          "indexed": 53.32
+        },
+        {
+          "year": 2026,
+          "total": 401,
+          "indexed": 55.54
+        }
+      ],
+      "peak_year": 2015,
+      "peak_enrollment": 742,
+      "last_year": 2026,
+      "last_enrollment": 401,
+      "pct_change_since_peak": -45.96,
+      "pct_change_since_index": -44.46
+    }
+  ],
+  "jurisdictions": [
+    {
+      "jurisdiction": "ATHERTON",
+      "permits_by_year": [
+        {
+          "year": 2022,
+          "total": 37,
+          "vl": 5,
+          "low": 1,
+          "mod": 0,
+          "above_mod": 31
+        },
+        {
+          "year": 2023,
+          "total": 81,
+          "vl": 22,
+          "low": 7,
+          "mod": 2,
+          "above_mod": 50
+        },
+        {
+          "year": 2024,
+          "total": 82,
+          "vl": 23,
+          "low": 6,
+          "mod": 6,
+          "above_mod": 47
+        },
+        {
+          "year": 2025,
+          "total": 99,
+          "vl": 0,
+          "low": 2,
+          "mod": 4,
+          "above_mod": 93
+        }
+      ],
+      "cumulative_2018_2023": 118,
+      "district_codes": [
+        "68957"
+      ]
+    },
+    {
+      "jurisdiction": "BELMONT",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 210,
+          "vl": 0,
+          "low": 27,
+          "mod": 10,
+          "above_mod": 173
+        },
+        {
+          "year": 2022,
+          "total": 6,
+          "vl": 0,
+          "low": 0,
+          "mod": 2,
+          "above_mod": 4
+        },
+        {
+          "year": 2023,
+          "total": 14,
+          "vl": 6,
+          "low": 5,
+          "mod": 3,
+          "above_mod": 0
+        },
+        {
+          "year": 2024,
+          "total": 14,
+          "vl": 5,
+          "low": 2,
+          "mod": 7,
+          "above_mod": 0
+        },
+        {
+          "year": 2025,
+          "total": 24,
+          "vl": 9,
+          "low": 8,
+          "mod": 5,
+          "above_mod": 2
+        }
+      ],
+      "cumulative_2018_2023": 230,
+      "district_codes": [
+        "68866"
+      ]
+    },
+    {
+      "jurisdiction": "BRISBANE",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 15,
+          "vl": 0,
+          "low": 0,
+          "mod": 8,
+          "above_mod": 7
+        },
+        {
+          "year": 2022,
+          "total": 17,
+          "vl": 2,
+          "low": 3,
+          "mod": 2,
+          "above_mod": 10
+        },
+        {
+          "year": 2023,
+          "total": 6,
+          "vl": 2,
+          "low": 2,
+          "mod": 1,
+          "above_mod": 1
+        },
+        {
+          "year": 2024,
+          "total": 4,
+          "vl": 1,
+          "low": 1,
+          "mod": 1,
+          "above_mod": 1
+        },
+        {
+          "year": 2025,
+          "total": 7,
+          "vl": 2,
+          "low": 2,
+          "mod": 1,
+          "above_mod": 2
+        }
+      ],
+      "cumulative_2018_2023": 38,
+      "district_codes": [
+        "68874"
+      ]
+    },
+    {
+      "jurisdiction": "BURLINGAME",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 62,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 62
+        },
+        {
+          "year": 2022,
+          "total": 42,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 42
+        },
+        {
+          "year": 2023,
+          "total": 33,
+          "vl": 11,
+          "low": 12,
+          "mod": 6,
+          "above_mod": 4
+        },
+        {
+          "year": 2024,
+          "total": 34,
+          "vl": 10,
+          "low": 9,
+          "mod": 9,
+          "above_mod": 6
+        },
+        {
+          "year": 2025,
+          "total": 33,
+          "vl": 18,
+          "low": 13,
+          "mod": 2,
+          "above_mod": 0
+        }
+      ],
+      "cumulative_2018_2023": 137,
+      "district_codes": [
+        "68882"
+      ]
+    },
+    {
+      "jurisdiction": "COLMA",
+      "permits_by_year": [
+        {
+          "year": 2025,
+          "total": 1,
+          "vl": 0,
+          "low": 1,
+          "mod": 0,
+          "above_mod": 0
+        }
+      ],
+      "cumulative_2018_2023": 0,
+      "district_codes": [
+        "68916"
+      ]
+    },
+    {
+      "jurisdiction": "DALY CITY",
+      "permits_by_year": [
+        {
+          "year": 2022,
+          "total": 14,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 14
+        },
+        {
+          "year": 2024,
+          "total": 1112,
+          "vl": 0,
+          "low": 150,
+          "mod": 72,
+          "above_mod": 890
+        }
+      ],
+      "cumulative_2018_2023": 14,
+      "district_codes": [
+        "68916"
+      ]
+    },
+    {
+      "jurisdiction": "EAST PALO ALTO",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 111,
+          "vl": 23,
+          "low": 6,
+          "mod": 6,
+          "above_mod": 76
+        },
+        {
+          "year": 2022,
+          "total": 635,
+          "vl": 7,
+          "low": 6,
+          "mod": 280,
+          "above_mod": 342
+        },
+        {
+          "year": 2023,
+          "total": 138,
+          "vl": 56,
+          "low": 23,
+          "mod": 0,
+          "above_mod": 59
+        },
+        {
+          "year": 2024,
+          "total": 610,
+          "vl": 125,
+          "low": 302,
+          "mod": 128,
+          "above_mod": 55
+        },
+        {
+          "year": 2025,
+          "total": 91,
+          "vl": 0,
+          "low": 78,
+          "mod": 0,
+          "above_mod": 13
+        }
+      ],
+      "cumulative_2018_2023": 884,
+      "district_codes": [
+        "68999"
+      ]
+    },
+    {
+      "jurisdiction": "FOSTER CITY",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 2,
+          "vl": 2,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 0
+        },
+        {
+          "year": 2023,
+          "total": 8,
+          "vl": 3,
+          "low": 0,
+          "mod": 3,
+          "above_mod": 2
+        },
+        {
+          "year": 2024,
+          "total": 2,
+          "vl": 1,
+          "low": 0,
+          "mod": 1,
+          "above_mod": 0
+        }
+      ],
+      "cumulative_2018_2023": 10,
+      "district_codes": [
+        "69039"
+      ]
+    },
+    {
+      "jurisdiction": "HALF MOON BAY",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 19,
+          "vl": 0,
+          "low": 0,
+          "mod": 18,
+          "above_mod": 1
+        },
+        {
+          "year": 2022,
+          "total": 17,
+          "vl": 0,
+          "low": 0,
+          "mod": 14,
+          "above_mod": 3
+        },
+        {
+          "year": 2023,
+          "total": 17,
+          "vl": 0,
+          "low": 10,
+          "mod": 5,
+          "above_mod": 2
+        },
+        {
+          "year": 2024,
+          "total": 5,
+          "vl": 0,
+          "low": 0,
+          "mod": 5,
+          "above_mod": 0
+        },
+        {
+          "year": 2025,
+          "total": 6,
+          "vl": 1,
+          "low": 1,
+          "mod": 0,
+          "above_mod": 4
+        }
+      ],
+      "cumulative_2018_2023": 53,
+      "district_codes": [
+        "68890"
+      ]
+    },
+    {
+      "jurisdiction": "HILLSBOROUGH",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 54,
+          "vl": 23,
+          "low": 19,
+          "mod": 2,
+          "above_mod": 10
+        },
+        {
+          "year": 2023,
+          "total": 41,
+          "vl": 16,
+          "low": 11,
+          "mod": 6,
+          "above_mod": 8
+        },
+        {
+          "year": 2024,
+          "total": 59,
+          "vl": 18,
+          "low": 12,
+          "mod": 12,
+          "above_mod": 17
+        }
+      ],
+      "cumulative_2018_2023": 95,
+      "district_codes": [
+        "68908"
+      ]
+    },
+    {
+      "jurisdiction": "MENLO PARK",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 17,
+          "vl": 1,
+          "low": 1,
+          "mod": 11,
+          "above_mod": 4
+        },
+        {
+          "year": 2022,
+          "total": 28,
+          "vl": 7,
+          "low": 8,
+          "mod": 10,
+          "above_mod": 3
+        },
+        {
+          "year": 2023,
+          "total": 18,
+          "vl": 10,
+          "low": 5,
+          "mod": 2,
+          "above_mod": 1
+        },
+        {
+          "year": 2024,
+          "total": 36,
+          "vl": 2,
+          "low": 7,
+          "mod": 1,
+          "above_mod": 26
+        },
+        {
+          "year": 2025,
+          "total": 892,
+          "vl": 17,
+          "low": 257,
+          "mod": 25,
+          "above_mod": 593
+        }
+      ],
+      "cumulative_2018_2023": 63,
+      "district_codes": [
+        "68965"
+      ]
+    },
+    {
+      "jurisdiction": "MILLBRAE",
+      "permits_by_year": [
+        {
+          "year": 2024,
+          "total": 98,
+          "vl": 10,
+          "low": 66,
+          "mod": 19,
+          "above_mod": 3
+        }
+      ],
+      "cumulative_2018_2023": 0,
+      "district_codes": [
+        "68973"
+      ]
+    },
+    {
+      "jurisdiction": "PACIFICA",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 30,
+          "vl": 0,
+          "low": 20,
+          "mod": 0,
+          "above_mod": 10
+        },
+        {
+          "year": 2023,
+          "total": 78,
+          "vl": 0,
+          "low": 7,
+          "mod": 7,
+          "above_mod": 64
+        },
+        {
+          "year": 2024,
+          "total": 56,
+          "vl": 15,
+          "low": 14,
+          "mod": 15,
+          "above_mod": 12
+        },
+        {
+          "year": 2025,
+          "total": 54,
+          "vl": 14,
+          "low": 14,
+          "mod": 12,
+          "above_mod": 14
+        }
+      ],
+      "cumulative_2018_2023": 108,
+      "district_codes": [
+        "68932"
+      ]
+    },
+    {
+      "jurisdiction": "PORTOLA VALLEY",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 21,
+          "vl": 6,
+          "low": 7,
+          "mod": 0,
+          "above_mod": 8
+        },
+        {
+          "year": 2022,
+          "total": 2,
+          "vl": 1,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 1
+        },
+        {
+          "year": 2023,
+          "total": 11,
+          "vl": 2,
+          "low": 0,
+          "mod": 3,
+          "above_mod": 6
+        },
+        {
+          "year": 2024,
+          "total": 17,
+          "vl": 4,
+          "low": 4,
+          "mod": 4,
+          "above_mod": 5
+        },
+        {
+          "year": 2025,
+          "total": 13,
+          "vl": 1,
+          "low": 6,
+          "mod": 3,
+          "above_mod": 3
+        }
+      ],
+      "cumulative_2018_2023": 34,
+      "district_codes": [
+        "68981"
+      ]
+    },
+    {
+      "jurisdiction": "REDWOOD CITY",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 21,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 21
+        },
+        {
+          "year": 2022,
+          "total": 26,
+          "vl": 7,
+          "low": 6,
+          "mod": 13,
+          "above_mod": 0
+        },
+        {
+          "year": 2023,
+          "total": 40,
+          "vl": 30,
+          "low": 8,
+          "mod": 1,
+          "above_mod": 1
+        },
+        {
+          "year": 2024,
+          "total": 81,
+          "vl": 31,
+          "low": 40,
+          "mod": 0,
+          "above_mod": 10
+        },
+        {
+          "year": 2025,
+          "total": 311,
+          "vl": 124,
+          "low": 123,
+          "mod": 6,
+          "above_mod": 58
+        }
+      ],
+      "cumulative_2018_2023": 87,
+      "district_codes": [
+        "68866",
+        "69005"
+      ]
+    },
+    {
+      "jurisdiction": "SAN BRUNO",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 1,
+          "vl": 0,
+          "low": 1,
+          "mod": 0,
+          "above_mod": 0
+        },
+        {
+          "year": 2022,
+          "total": 151,
+          "vl": 12,
+          "low": 32,
+          "mod": 10,
+          "above_mod": 97
+        },
+        {
+          "year": 2023,
+          "total": 32,
+          "vl": 16,
+          "low": 8,
+          "mod": 5,
+          "above_mod": 3
+        },
+        {
+          "year": 2024,
+          "total": 74,
+          "vl": 10,
+          "low": 10,
+          "mod": 12,
+          "above_mod": 42
+        },
+        {
+          "year": 2025,
+          "total": 36,
+          "vl": 10,
+          "low": 4,
+          "mod": 22,
+          "above_mod": 0
+        }
+      ],
+      "cumulative_2018_2023": 184,
+      "district_codes": [
+        "69013"
+      ]
+    },
+    {
+      "jurisdiction": "SAN CARLOS",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 47,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 47
+        },
+        {
+          "year": 2022,
+          "total": 56,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 56
+        },
+        {
+          "year": 2023,
+          "total": 107,
+          "vl": 0,
+          "low": 10,
+          "mod": 0,
+          "above_mod": 97
+        },
+        {
+          "year": 2024,
+          "total": 11,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 11
+        },
+        {
+          "year": 2025,
+          "total": 22,
+          "vl": 3,
+          "low": 6,
+          "mod": 5,
+          "above_mod": 8
+        }
+      ],
+      "cumulative_2018_2023": 210,
+      "district_codes": [
+        "69021"
+      ]
+    },
+    {
+      "jurisdiction": "SAN MATEO",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 123,
+          "vl": 4,
+          "low": 8,
+          "mod": 2,
+          "above_mod": 109
+        },
+        {
+          "year": 2022,
+          "total": 1669,
+          "vl": 109,
+          "low": 39,
+          "mod": 29,
+          "above_mod": 1492
+        },
+        {
+          "year": 2023,
+          "total": 64,
+          "vl": 7,
+          "low": 3,
+          "mod": 2,
+          "above_mod": 52
+        },
+        {
+          "year": 2024,
+          "total": 19,
+          "vl": 5,
+          "low": 5,
+          "mod": 5,
+          "above_mod": 4
+        },
+        {
+          "year": 2025,
+          "total": 14,
+          "vl": 3,
+          "low": 3,
+          "mod": 3,
+          "above_mod": 5
+        }
+      ],
+      "cumulative_2018_2023": 1856,
+      "district_codes": [
+        "69039"
+      ]
+    },
+    {
+      "jurisdiction": "SAN MATEO COUNTY",
+      "permits_by_year": [
+        {
+          "year": 2022,
+          "total": 57,
+          "vl": 11,
+          "low": 12,
+          "mod": 5,
+          "above_mod": 29
+        },
+        {
+          "year": 2023,
+          "total": 134,
+          "vl": 69,
+          "low": 3,
+          "mod": 16,
+          "above_mod": 46
+        },
+        {
+          "year": 2024,
+          "total": 51,
+          "vl": 0,
+          "low": 7,
+          "mod": 14,
+          "above_mod": 30
+        },
+        {
+          "year": 2025,
+          "total": 300,
+          "vl": 42,
+          "low": 150,
+          "mod": 25,
+          "above_mod": 83
+        }
+      ],
+      "cumulative_2018_2023": 191,
+      "district_codes": []
+    },
+    {
+      "jurisdiction": "SOUTH SAN FRANCISCO",
+      "permits_by_year": [
+        {
+          "year": 2021,
+          "total": 11,
+          "vl": 0,
+          "low": 0,
+          "mod": 7,
+          "above_mod": 4
+        },
+        {
+          "year": 2022,
+          "total": 187,
+          "vl": 9,
+          "low": 18,
+          "mod": 0,
+          "above_mod": 160
+        },
+        {
+          "year": 2023,
+          "total": 5,
+          "vl": 0,
+          "low": 0,
+          "mod": 3,
+          "above_mod": 2
+        },
+        {
+          "year": 2024,
+          "total": 5,
+          "vl": 0,
+          "low": 0,
+          "mod": 0,
+          "above_mod": 5
+        },
+        {
+          "year": 2025,
+          "total": 162,
+          "vl": 76,
+          "low": 67,
+          "mod": 0,
+          "above_mod": 19
+        }
+      ],
+      "cumulative_2018_2023": 203,
+      "district_codes": [
+        "69070"
+      ]
+    }
+  ],
+  "scatter": [
+    {
+      "label": "ATHERTON / Las Lomitas Elementary",
+      "jurisdiction": "ATHERTON",
+      "district_code": "68957",
+      "district_name": "Las Lomitas Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 118,
+      "enrollment_pct_change": -53.8,
+      "peak_year": 2017,
+      "peak_enrollment": 2514,
+      "last_enrollment": 1142
+    },
+    {
+      "label": "BELMONT / Belmont-Redwood Shores Elementary",
+      "jurisdiction": "BELMONT",
+      "district_code": "68866",
+      "district_name": "Belmont-Redwood Shores Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 230,
+      "enrollment_pct_change": -48.53,
+      "peak_year": 2018,
+      "peak_enrollment": 7540,
+      "last_enrollment": 3881
+    },
+    {
+      "label": "BRISBANE / Brisbane Elementary",
+      "jurisdiction": "BRISBANE",
+      "district_code": "68874",
+      "district_name": "Brisbane Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 38,
+      "enrollment_pct_change": -38.68,
+      "peak_year": 2021,
+      "peak_enrollment": 816,
+      "last_enrollment": 482
+    },
+    {
+      "label": "BURLINGAME / Burlingame Elementary",
+      "jurisdiction": "BURLINGAME",
+      "district_code": "68882",
+      "district_name": "Burlingame Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 137,
+      "enrollment_pct_change": -43.02,
+      "peak_year": 2020,
+      "peak_enrollment": 6168,
+      "last_enrollment": 3419
+    },
+    {
+      "label": "DALY CITY / Jefferson Elementary",
+      "jurisdiction": "DALY CITY",
+      "district_code": "68916",
+      "district_name": "Jefferson Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 14,
+      "enrollment_pct_change": -49.93,
+      "peak_year": 2015,
+      "peak_enrollment": 12678,
+      "last_enrollment": 6020
+    },
+    {
+      "label": "EAST PALO ALTO / Ravenswood City Elementary",
+      "jurisdiction": "EAST PALO ALTO",
+      "district_code": "68999",
+      "district_name": "Ravenswood City Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 884,
+      "enrollment_pct_change": -62.15,
+      "peak_year": 2015,
+      "peak_enrollment": 7418,
+      "last_enrollment": 2432
+    },
+    {
+      "label": "FOSTER CITY / San Mateo-Foster City",
+      "jurisdiction": "FOSTER CITY",
+      "district_code": "69039",
+      "district_name": "San Mateo-Foster City",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 10,
+      "enrollment_pct_change": -52.43,
+      "peak_year": 2017,
+      "peak_enrollment": 20588,
+      "last_enrollment": 9708
+    },
+    {
+      "label": "HALF MOON BAY / Cabrillo Unified",
+      "jurisdiction": "HALF MOON BAY",
+      "district_code": "68890",
+      "district_name": "Cabrillo Unified",
+      "district_type": "unified",
+      "cumulative_permits_2018_2023": 53,
+      "enrollment_pct_change": -57.39,
+      "peak_year": 2015,
+      "peak_enrollment": 6148,
+      "last_enrollment": 2504
+    },
+    {
+      "label": "HILLSBOROUGH / Hillsborough City Elementary",
+      "jurisdiction": "HILLSBOROUGH",
+      "district_code": "68908",
+      "district_name": "Hillsborough City Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 95,
+      "enrollment_pct_change": -53.39,
+      "peak_year": 2015,
+      "peak_enrollment": 2764,
+      "last_enrollment": 1198
+    },
+    {
+      "label": "MENLO PARK / Menlo Park City Elementary",
+      "jurisdiction": "MENLO PARK",
+      "district_code": "68965",
+      "district_name": "Menlo Park City Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 63,
+      "enrollment_pct_change": -50.53,
+      "peak_year": 2017,
+      "peak_enrollment": 5348,
+      "last_enrollment": 2622
+    },
+    {
+      "label": "PACIFICA / Pacifica",
+      "jurisdiction": "PACIFICA",
+      "district_code": "68932",
+      "district_name": "Pacifica",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 108,
+      "enrollment_pct_change": -53.78,
+      "peak_year": 2015,
+      "peak_enrollment": 5570,
+      "last_enrollment": 2531
+    },
+    {
+      "label": "PORTOLA VALLEY / Portola Valley Elementary",
+      "jurisdiction": "PORTOLA VALLEY",
+      "district_code": "68981",
+      "district_name": "Portola Valley Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 34,
+      "enrollment_pct_change": -52.23,
+      "peak_year": 2015,
+      "peak_enrollment": 1138,
+      "last_enrollment": 513
+    },
+    {
+      "label": "REDWOOD CITY / Belmont-Redwood Shores Elementary",
+      "jurisdiction": "REDWOOD CITY",
+      "district_code": "68866",
+      "district_name": "Belmont-Redwood Shores Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 87,
+      "enrollment_pct_change": -48.53,
+      "peak_year": 2018,
+      "peak_enrollment": 7540,
+      "last_enrollment": 3881
+    },
+    {
+      "label": "REDWOOD CITY / Redwood City Elementary",
+      "jurisdiction": "REDWOOD CITY",
+      "district_code": "69005",
+      "district_name": "Redwood City Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 87,
+      "enrollment_pct_change": -51.87,
+      "peak_year": 2015,
+      "peak_enrollment": 15874,
+      "last_enrollment": 7428
+    },
+    {
+      "label": "SAN BRUNO / San Bruno Park Elementary",
+      "jurisdiction": "SAN BRUNO",
+      "district_code": "69013",
+      "district_name": "San Bruno Park Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 184,
+      "enrollment_pct_change": -56.23,
+      "peak_year": 2015,
+      "peak_enrollment": 4810,
+      "last_enrollment": 1997
+    },
+    {
+      "label": "SAN CARLOS / San Carlos Elementary",
+      "jurisdiction": "SAN CARLOS",
+      "district_code": "69021",
+      "district_name": "San Carlos Elementary",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 210,
+      "enrollment_pct_change": -46.18,
+      "peak_year": 2018,
+      "peak_enrollment": 6210,
+      "last_enrollment": 3342
+    },
+    {
+      "label": "SAN MATEO / San Mateo-Foster City",
+      "jurisdiction": "SAN MATEO",
+      "district_code": "69039",
+      "district_name": "San Mateo-Foster City",
+      "district_type": "elementary",
+      "cumulative_permits_2018_2023": 1856,
+      "enrollment_pct_change": -52.43,
+      "peak_year": 2017,
+      "peak_enrollment": 20588,
+      "last_enrollment": 9708
+    },
+    {
+      "label": "SOUTH SAN FRANCISCO / South San Francisco Unified",
+      "jurisdiction": "SOUTH SAN FRANCISCO",
+      "district_code": "69070",
+      "district_name": "South San Francisco Unified",
+      "district_type": "unified",
+      "cumulative_permits_2018_2023": 203,
+      "enrollment_pct_change": -52.1,
+      "peak_year": 2015,
+      "peak_enrollment": 16688,
+      "last_enrollment": 7624
+    }
+  ],
+  "county_totals": {
+    "enrollment": [
+      {
+        "year": 2015,
+        "total": 173752,
+        "indexed": 100.04
+      },
+      {
+        "year": 2016,
+        "total": 173630,
+        "indexed": 99.97
+      },
+      {
+        "year": 2017,
+        "total": 174093,
+        "indexed": 100.23
+      },
+      {
+        "year": 2018,
+        "total": 173689,
+        "indexed": 100.0
+      },
+      {
+        "year": 2019,
+        "total": 172337,
+        "indexed": 99.22
+      },
+      {
+        "year": 2020,
+        "total": 171094,
+        "indexed": 98.51
+      },
+      {
+        "year": 2021,
+        "total": 166216,
+        "indexed": 95.7
+      },
+      {
+        "year": 2022,
+        "total": 158774,
+        "indexed": 91.41
+      },
+      {
+        "year": 2023,
+        "total": 155152,
+        "indexed": 89.33
+      },
+      {
+        "year": 2024,
+        "total": 84180,
+        "indexed": 48.47
+      },
+      {
+        "year": 2025,
+        "total": 83855,
+        "indexed": 48.28
+      },
+      {
+        "year": 2026,
+        "total": 82866,
+        "indexed": 47.71
+      }
+    ],
+    "permits": [
+      {
+        "year": 2021,
+        "total": 744
+      },
+      {
+        "year": 2022,
+        "total": 2944
+      },
+      {
+        "year": 2023,
+        "total": 827
+      },
+      {
+        "year": 2024,
+        "total": 2370
+      },
+      {
+        "year": 2025,
+        "total": 2065
+      }
+    ]
+  }
+}
