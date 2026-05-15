@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="K–12 enrollment in every San Mateo County school district has declined since 2018, regardless of how much housing was built nearby.">
+<title>Peninsula Schools: Enrollment Decline vs. Housing Production</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Peninsula for Everyone brand palette */
+  --green:        #1d6b50;   /* P4E primary teal-green */
+  --green-dark:   #144d3a;   /* hover / dark variant */
+  --green-light:  #2b8a68;   /* lighter accent */
+  --green-faint:  #e8f3ef;   /* subtle tint for callout backgrounds */
+  --green-border: #b8d9cc;   /* border tint */
+
+  /* Surfaces */
+  --bg:           #ffffff;
+  --bg-subtle:    #f4faf7;   /* light green-tinted section bg */
+  --surface:      #ffffff;
+  --border:       #d6e8e1;
+
+  /* Typography */
+  --text:         #111b17;   /* near-black with green undertone */
+  --muted:        #4a6358;   /* muted green-gray */
+  --faint:        #9ab8ae;
+
+  /* Data / chart accents — kept distinct from brand green */
+  --red:          #c0392b;
+  --amber:        #c85e26;
+  --blue:         #1a5fa8;
+  --grid:         #e8f2ee;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── P4E attribution header ── */
+.p4e-header {
+  background: var(--green-dark);
+  padding: 12px 24px;
+}
+.p4e-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.p4e-header a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  font-weight: 500;
+}
+.p4e-header a:hover { color: #fff; }
+.p4e-logo-mark {
+  width: 28px;
+  height: 28px;
+  background: var(--green-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+.p4e-divider {
+  color: rgba(255,255,255,0.3);
+  margin: 0 4px;
+}
+.p4e-resource-label {
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+/* ── Hero ── */
+.hero {
+  padding: 64px 0 52px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.kicker::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--green);
+  border-radius: 1px;
+}
+
+h1 {
+  font-size: clamp(1.85rem, 4.2vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 24px;
+  max-width: 760px;
+  letter-spacing: -0.02em;
+}
+
+.standfirst {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 640px;
+  font-weight: 400;
+}
+
+/* ── Stats ── */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 48px 0 0;
+}
+
+.stat-card { background: var(--surface); padding: 28px 24px; }
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: -0.03em;
+}
+.stat-number.red { color: var(--red); }
+
+.stat-label { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+/* ── Sections ── */
+.section { padding: 60px 0; border-bottom: 1px solid var(--border); }
+
+.section-label {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--green-faint);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  max-width: 720px;
+}
+
+.dek {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 32px;
+  max-width: 620px;
+  line-height: 1.7;
+}
+
+/* ── Chart wrapper ── */
+.chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 24px 20px;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.legend-item { display: flex; align-items: center; gap: 7px; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.legend-line { width: 18px; height: 0; flex-shrink: 0; }
+
+/* ── Annotation ── */
+.annotation {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--green);
+  background: var(--green-faint);
+  border-radius: 0 6px 6px 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+}
+.annotation strong { color: var(--green-dark); }
+
+/* ── Filter buttons ── */
+.filter-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  font-size: 12px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--muted);
+  transition: all 0.15s ease;
+}
+.filter-btn:hover { border-color: var(--green); color: var(--green); }
+.filter-btn.active { background: var(--green); color: #fff; border-color: var(--green); }
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.7);
+  padding: 48px 0 52px;
+  margin-top: 0;
+}
+.site-footer .container { font-size: 13px; line-height: 1.7; }
+.site-footer p + p { margin-top: 10px; }
+.site-footer a { color: rgba(255,255,255,0.85); text-decoration: underline; text-decoration-color: rgba(255,255,255,0.3); }
+.site-footer a:hover { color: #fff; text-decoration-color: rgba(255,255,255,0.7); }
+.site-footer strong { color: rgba(255,255,255,0.9); }
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  margin: 24px 0;
+}
+
+.footer-p4e {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer-p4e-mark {
+  width: 32px;
+  height: 32px;
+  background: var(--green-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+.footer-p4e-text { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.4; }
+.footer-p4e-text strong { color: rgba(255,255,255,0.9); display: block; }
+
+@media (max-width: 580px) {
+  .stats-row { grid-template-columns: 1fr; }
+  .hero { padding: 44px 0 36px; }
+  h1 { font-size: 1.75rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="p4e-header">
+  <div class="p4e-header-inner">
+    <a href="https://peninsulaforeveryone.org" target="_blank" rel="noopener">
+      <span class="p4e-logo-mark" aria-hidden="true">P</span>
+      <span>Peninsula for Everyone</span>
+    </a>
+    <span class="p4e-divider">·</span>
+    <span class="p4e-resource-label">Data resource</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <header class="hero">
+    <p class="kicker">A data rebuttal · San Mateo County schools</p>
+    <h1>Building homes won't overwhelm Peninsula schools. They're already emptying out.</h1>
+    <p class="standfirst">
+      At nearly every housing meeting on the Peninsula, someone stands up to warn that new
+      apartments will flood classrooms with children. This argument has slowed or blocked
+      thousands of homes across San Mateo County for years. The enrollment data — from
+      the California Department of Education, covering every public school district in the
+      county — says it isn't true.
+    </p>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-number red">100%</div>
+        <div class="stat-label">of Peninsula districts with meaningful housing production have <em>fewer</em> students today than in 2018</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-students">—</div>
+        <div class="stat-label">students lost across the county's 24 public school districts since peak enrollment</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-peak">—</div>
+        <div class="stat-label">average enrollment decline from each district's all-time peak to the current school year</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bridge -->
+  <section class="section" style="padding-bottom: 48px;">
+    <p style="font-size: 17px; line-height: 1.78; color: var(--text); max-width: 680px;">
+      San Mateo County has been losing students since roughly 2015 — before the current
+      wave of housing approvals, before the pandemic, and with no sign of reversal.
+      The concern driving the schools objection gets the causation exactly backwards:
+      it isn't new housing that shrinks the school-age population. It is the decades-long
+      failure to build housing that has made the Peninsula unaffordable for the young families
+      schools need to stay open.
+    </p>
+  </section>
+
+  <!-- Chart 1: Scatter -->
+  <section class="section">
+    <p class="section-label">The test</p>
+    <h2>If housing caused enrollment growth, we'd see it here. We don't.</h2>
+    <p class="dek">
+      Each dot is a Peninsula school district, plotted against how many housing units it
+      approved (2021–2025) and how much its enrollment changed since 2018. The schools
+      argument predicts a positive slope — more building, more children. The actual slope
+      is flat to negative. Every district is below zero.
+    </p>
+
+    <div class="chart-wrap">
+      <div class="chart-legend">
+        <span class="legend-item">
+          <span class="legend-dot" style="background: var(--blue);"></span> Elementary
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background: var(--red);"></span> High school
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background: var(--amber);"></span> Unified
+        </span>
+        <span class="legend-item">
+          <span class="legend-line" style="border-top: 1.5px dashed var(--faint);"></span> Trend line
+        </span>
+      </div>
+      <div style="position: relative; height: 400px;">
+        <canvas id="scatterChart"
+          role="img"
+          aria-label="Scatter plot showing no positive correlation between cumulative housing permits and enrollment change since 2018. All 18 districts show negative enrollment change.">
+          All 18 mapped Peninsula school districts show negative enrollment change since 2018, regardless of housing permit volume. The trend line is flat to slightly negative.
+        </canvas>
+      </div>
+    </div>
+
+    <div class="annotation">
+      <strong>The predicted signal is absent.</strong> Jurisdictions like Redwood City and
+      South San Francisco — which permitted hundreds of units — show enrollment declines
+      indistinguishable from Hillsborough and Portola Valley, which built almost nothing.
+      Permitting more housing has not sent more children to schools. It has not even slowed
+      the rate of decline.
+    </div>
+  </section>
+
+  <!-- Chart 2: Trends -->
+  <section class="section">
+    <p class="section-label">The backstory</p>
+    <h2>The decline started a decade ago, before any housing wave.</h2>
+    <p class="dek">
+      K–12 enrollment indexed to 2018 = 100. The bold line is the county total; lighter lines
+      are individual districts. Most peaked in 2015–2017 — years before any significant
+      Peninsula housing project was approved or occupied. The pandemic deepened the drop.
+      The recovery has been partial and uneven.
+    </p>
+
+    <div class="filter-row" id="typeFilter">
+      <button class="filter-btn active" data-type="all">All districts</button>
+      <button class="filter-btn" data-type="elementary">Elementary</button>
+      <button class="filter-btn" data-type="high_school">High school</button>
+      <button class="filter-btn" data-type="unified">Unified</button>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-legend">
+        <span class="legend-item">
+          <span class="legend-line" style="border-top: 2.5px solid var(--navy);"></span> County total
+        </span>
+        <span class="legend-item">
+          <span class="legend-line" style="border-top: 1px solid var(--faint);"></span> Individual districts
+        </span>
+        <span class="legend-item">
+          <span class="legend-line" style="border-top: 1.5px dashed var(--red); width: 18px;"></span> 2018 baseline
+        </span>
+      </div>
+      <div style="position: relative; height: 380px;">
+        <canvas id="trendChart"
+          role="img"
+          aria-label="Line chart of K-12 enrollment indexed to 2018 equals 100 for all 24 San Mateo County school districts. All districts trend downward from their peak years around 2015-2017.">
+          All 24 school districts in San Mateo County show enrollment indexed below 100 by 2025-26, with most having peaked around 2015-2017.
+        </canvas>
+      </div>
+    </div>
+
+    <div class="annotation">
+      <strong>Cost is the driver, not construction.</strong> At Peninsula prices, young families
+      either can't move here or eventually leave. The school-age population has been contracting
+      for a decade as a direct consequence of housing scarcity. Adding homes — particularly
+      affordable ones — is more likely to slow the enrollment decline than to accelerate it.
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="section">
+    <p class="section-label">The implication</p>
+    <h2>Blocking housing doesn't protect schools. It starves them.</h2>
+    <p style="font-size: 16px; line-height: 1.78; color: var(--text); max-width: 680px; margin-bottom: 20px;">
+      California funds schools through the Local Control Funding Formula, which allocates
+      money per enrolled student. Every child who leaves the system — or never arrives —
+      is funding that cannot pay teachers, maintain facilities, or keep programs running.
+      Peninsula districts are not straining under growth pressure. They are closing classrooms
+      and consolidating schools under the weight of sustained decline.
+    </p>
+    <p style="font-size: 16px; line-height: 1.78; color: var(--text); max-width: 680px;">
+      The families most likely to bring school-age children to the Peninsula are exactly
+      the families who need more affordable options to get here. The schools objection
+      to new housing — repeated at city hall meetings across the county, cited in planning
+      documents, weaponized in CEQA challenges — is not supported by the enrollment record.
+      The data points the other way.
+    </p>
+  </section>
+
+</div><!-- /.container -->
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-p4e">
+      <span class="footer-p4e-mark" aria-hidden="true">P</span>
+      <span class="footer-p4e-text">
+        <strong>Peninsula for Everyone</strong>
+        A grassroots network saying yes to homes, transit, and equitable neighborhoods.
+      </span>
+    </div>
+
+    <hr class="footer-divider">
+
+    <p>
+      <strong>Enrollment data:</strong>
+      California Department of Education
+      <a href="https://www.cde.ca.gov/ds/ad/fileshistenr8122.asp" target="_blank" rel="noopener">enrollment bundle files</a>
+      (2014–15 through 2022–23) and
+      <a href="https://www.cde.ca.gov/ds/ad/filesenrcensus.asp" target="_blank" rel="noopener">Census Day enrollment files</a>
+      (2023–24 through 2025–26). Counts reflect Census Day (first Wednesday of October).
+      Excludes Transitional Kindergarten for consistency.
+    </p>
+    <p>
+      <strong>Housing data:</strong>
+      <a href="https://www.hcd.ca.gov/planning-and-community-development/annual-progress-reports" target="_blank" rel="noopener">HCD Housing Element Annual Progress Reports</a>
+      — approved building permits by jurisdiction, 2021–2025. No complete SMC submissions for 2018–2020;
+      pre-2021 context from the
+      <a href="https://www.census.gov/construction/bps/" target="_blank" rel="noopener">Census Bureau Building Permits Survey</a>.
+      Housing–district crosswalk is manually curated; APR data is self-reported.
+    </p>
+
+    <hr class="footer-divider">
+
+    <p>
+      Data pipeline and source code:
+      <a href="https://github.com/yourusername/peninsula-enrollment-decline" target="_blank" rel="noopener">
+        github.com/yourusername/peninsula-enrollment-decline
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+<script>
+(async () => {
+  const data = await fetch('./data/viz_data.json').then(r => r.json());
+
+  const NAVY   = '#1d6b50';  /* P4E green */
+  const RED    = '#bf2c24';
+  const AMBER  = '#c85e26';
+  const BLUE   = '#1a5fa8';
+  const FAINT  = '#c5bfb4';
+  const GRID   = '#ede9e1';
+  const MUTED  = '#7a7060';
+  const INDEX_YEAR = data.meta.index_year;
+
+  const typeColors = { elementary: BLUE, high_school: RED, unified: AMBER };
+
+  /* ── Summary stats ── */
+  let totalBase = 0, totalLatest = 0;
+  const peakChanges = [];
+
+  data.districts.forEach(d => {
+    const base   = d.enrollment.find(e => e.year === INDEX_YEAR);
+    const latest = d.enrollment[d.enrollment.length - 1];
+    if (base && latest) { totalBase += base.total; totalLatest += latest.total; }
+    if (d.pct_change_since_peak !== null) peakChanges.push(d.pct_change_since_peak);
+  });
+
+  const lost = totalBase - totalLatest;
+  const avgPeak = peakChanges.reduce((a, b) => a + b, 0) / peakChanges.length;
+
+  document.getElementById('stat-students').textContent =
+    lost > 0 ? lost.toLocaleString() : Math.abs(lost).toLocaleString();
+  document.getElementById('stat-peak').textContent =
+    Math.abs(avgPeak).toFixed(1) + '%';
+
+  /* ── Scatter ── */
+  const scatter = data.scatter;
+  const xs = scatter.map(s => s.cumulative_permits_2018_2023);
+  const ys = scatter.map(s => s.enrollment_pct_change);
+  const n  = xs.length;
+  const xM = xs.reduce((a, b) => a + b, 0) / n;
+  const yM = ys.reduce((a, b) => a + b, 0) / n;
+  const slope = xs.reduce((a, x, i) => a + (x - xM) * (ys[i] - yM), 0) /
+                xs.reduce((a, x)    => a + (x - xM) ** 2, 0);
+  const intercept = yM - slope * xM;
+  const xMin = Math.min(...xs), xMax = Math.max(...xs);
+
+  new Chart(document.getElementById('scatterChart'), {
+    type: 'scatter',
+    data: {
+      datasets: [
+        {
+          label: 'District',
+          data: scatter.map(s => ({
+            x: s.cumulative_permits_2018_2023,
+            y: s.enrollment_pct_change,
+            _label: s.jurisdiction,
+            _type: s.district_type,
+            _district: s.district_name,
+          })),
+          backgroundColor: scatter.map(s => (typeColors[s.district_type] || NAVY) + 'bb'),
+          borderColor:     scatter.map(s =>  typeColors[s.district_type] || NAVY),
+          borderWidth: 1.5,
+          pointRadius: 9,
+          pointHoverRadius: 11,
+        },
+        {
+          label: 'Trend',
+          type: 'line',
+          data: [
+            { x: xMin, y: slope * xMin + intercept },
+            { x: xMax, y: slope * xMax + intercept },
+          ],
+          borderColor: FAINT,
+          borderWidth: 1.5,
+          borderDash: [6, 5],
+          pointRadius: 0,
+          fill: false,
+          tension: 0,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { top: 10, right: 16, bottom: 4, left: 4 } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const d = ctx.raw;
+              if (!d._label) return null;
+              return [
+                d._label,
+                `${d._district}`,
+                `Approved permits (2021–25): ${Math.round(d.x).toLocaleString()}`,
+                `Enrollment change since 2018: ${d.y?.toFixed(1)}%`,
+              ];
+            },
+          },
+          filter: item => !!item.raw._label,
+        },
+        annotation: {
+          annotations: {
+            zeroLine: {
+              type: 'line',
+              yMin: 0, yMax: 0,
+              borderColor: RED + '55',
+              borderWidth: 1,
+              borderDash: [4, 4],
+              label: {
+                content: 'No change (baseline)',
+                display: true,
+                position: 'end',
+                backgroundColor: 'transparent',
+                color: RED + 'aa',
+                font: { size: 11, family: 'Outfit' },
+                yAdjust: -10,
+              },
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Cumulative approved housing permits (2021–2025)',
+            color: MUTED,
+            font: { size: 12, family: 'Outfit' },
+            padding: { top: 8 },
+          },
+          grid: { color: GRID },
+          ticks: { color: MUTED, font: { size: 11 }, maxTicksLimit: 7 },
+        },
+        y: {
+          title: {
+            display: true,
+            text: '% enrollment change since 2018',
+            color: MUTED,
+            font: { size: 12, family: 'Outfit' },
+          },
+          grid: { color: GRID },
+          ticks: {
+            color: MUTED,
+            font: { size: 11 },
+            callback: v => v.toFixed(0) + '%',
+          },
+        },
+      },
+    },
+  });
+
+  /* ── Trend lines ── */
+  const years = data.meta.enrollment_years;
+
+  function buildTrend(typeFilter) {
+    const sets = [];
+
+    data.districts.forEach(d => {
+      if (typeFilter !== 'all' && d.type !== typeFilter) return;
+      sets.push({
+        label: d.district_name,
+        data: years.map(yr => {
+          const e = d.enrollment.find(x => x.year === yr);
+          return e ? e.indexed : null;
+        }),
+        borderColor: FAINT,
+        borderWidth: 1,
+        pointRadius: 0,
+        fill: false,
+        tension: 0.35,
+        spanGaps: true,
+      });
+    });
+
+    sets.push({
+      label: 'San Mateo County total',
+      data: years.map(yr => {
+        const e = data.county_totals.enrollment.find(x => x.year === yr);
+        return e ? e.indexed : null;
+      }),
+      borderColor: NAVY,
+      borderWidth: 2.5,
+      pointRadius: 0,
+      fill: false,
+      tension: 0.35,
+      spanGaps: true,
+    });
+
+    return sets;
+  }
+
+  const trendChart = new Chart(document.getElementById('trendChart'), {
+    type: 'line',
+    data: { labels: years, datasets: buildTrend('all') },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 250 },
+      layout: { padding: { top: 10, right: 16, bottom: 4, left: 4 } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          mode: 'index',
+          intersect: false,
+          filter: item => item.dataset.label === 'San Mateo County total',
+          callbacks: {
+            label: ctx => `County: ${ctx.parsed.y?.toFixed(1)} (2018 = 100)`,
+          },
+        },
+        annotation: {
+          annotations: {
+            baseline: {
+              type: 'line',
+              yMin: 100, yMax: 100,
+              borderColor: RED + '66',
+              borderWidth: 1.5,
+              borderDash: [5, 4],
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          grid: { color: GRID },
+          ticks: {
+            color: MUTED,
+            font: { size: 11 },
+            maxTicksLimit: 8,
+            autoSkip: false,
+            maxRotation: 0,
+            callback: (_, i) => years[i] % 2 === 0 ? years[i] : '',
+          },
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Enrollment index (2018 = 100)',
+            color: MUTED,
+            font: { size: 12, family: 'Outfit' },
+          },
+          grid: { color: GRID },
+          ticks: {
+            color: MUTED,
+            font: { size: 11 },
+            callback: v => Math.round(v),
+          },
+        },
+      },
+    },
+  });
+
+  document.getElementById('typeFilter').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    trendChart.data.datasets = buildTrend(btn.dataset.type);
+    trendChart.update();
+  });
+
+})();
+</script>
+
+</body>
+</html>

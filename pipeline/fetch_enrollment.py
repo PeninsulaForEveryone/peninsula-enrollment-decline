@@ -138,14 +138,25 @@ def _parse_bundle(path: Path, target_years: List[str]) -> pd.DataFrame:
     df = pd.concat(chunks, ignore_index=True)
     log.info("  SMC rows: %d", len(df))
 
+    # ENR_TYPE='C' is the Census Day combined count (primary + short-term).
+    # ENR_TYPE='P' is primary-only. Both rows have identical ENR_TOTAL — summing
+    # both would double every count. Keep only 'C'.
+    df = df[df["ENR_TYPE"] == "C"].copy()
+
     df["district_code"] = df["CDS_CODE"].str[2:7]
     df["school_code"]   = df["CDS_CODE"].str[7:14]
     df = df[df["school_code"] != "0000000"].copy()
 
-    present_grade_cols = [c for c in GRADE_COLS_BUNDLE if c in df.columns]
-    for col in present_grade_cols:
-        df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
-    df["k12_total"] = df[present_grade_cols].sum(axis=1)
+    # Use ENR_TOTAL directly (pre-summed, excludes ADULT).
+    # Fall back to summing grade columns if ENR_TOTAL is absent.
+    if "ENR_TOTAL" in df.columns:
+        df["ENR_TOTAL"] = pd.to_numeric(df["ENR_TOTAL"], errors="coerce").fillna(0)
+        df["k12_total"] = df["ENR_TOTAL"]
+    else:
+        present_grade_cols = [c for c in GRADE_COLS_BUNDLE if c in df.columns]
+        for col in present_grade_cols:
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+        df["k12_total"] = df[present_grade_cols].sum(axis=1)
 
     df["year"] = df["ACADEMIC_YEAR"].apply(_academic_year_to_int)
 
@@ -200,6 +211,7 @@ def _fetch_district_names() -> Dict[str, str]:
             df = df[df["ReportingCategory"].str.upper() == "TA"].copy()
             df["CountyCode"] = df["CountyCode"].str.zfill(2)
             df = df[df["CountyCode"] == SMC_COUNTY_CODE].copy()
+            df = df.drop_duplicates(subset=["DistrictCode"])
             names = dict(zip(df["DistrictCode"].str.zfill(5), df["DistrictName"].str.strip()))
             log.info("  loaded %d district names from %s", len(names), filename)
             return names
@@ -232,20 +244,29 @@ def fetch_new_enrollment(force: bool = False) -> pd.DataFrame:
             df = pd.read_csv(path, sep="\t", dtype=str, low_memory=False, encoding="latin-1")
             df.columns = [c.strip() for c in df.columns]
 
-            # Keep district-level rows only
+            # Keep district-level, Total All Students rows
             df = df[df["AggregateLevel"].str.upper() == "D"].copy()
-
-            # Keep "Total - All Students" rows only (excludes demographic breakdowns)
             df = df[df["ReportingCategory"].str.upper() == "TA"].copy()
 
             # Filter to San Mateo County
             df["CountyCode"] = df["CountyCode"].str.zfill(2)
             df = df[df["CountyCode"] == SMC_COUNTY_CODE].copy()
 
+            # Each district has 2-3 rows: one district total + breakdowns by funding type.
+            # The total row has the highest enrollment. Use grade-column sum (K-12, no TK)
+            # for consistency with bundle files, then keep the max-enrollment row per district.
+            k12_cols = ["GR_KN"] + [f"GR_{str(i).zfill(2)}" for i in range(1, 13)]
+            present = [c for c in k12_cols if c in df.columns]
+            for c in present:
+                df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
+            df["enrollment"] = df[present].sum(axis=1)
+
+            # Take the row with the highest K-12 enrollment per district (= total row)
+            df = df.loc[df.groupby("DistrictCode")["enrollment"].idxmax()].copy()
+
             df["district_code"] = df["DistrictCode"].str.zfill(5)
-            df["district_name"]  = df["DistrictName"].str.strip()
-            df["enrollment"]     = pd.to_numeric(df["TOTAL_ENR"], errors="coerce").fillna(0)
-            df["year"]           = year
+            df["district_name"] = df["DistrictName"].str.strip()
+            df["year"]          = year
 
             result = df[["district_code", "district_name", "year", "enrollment"]].copy()
             frames.append(result)

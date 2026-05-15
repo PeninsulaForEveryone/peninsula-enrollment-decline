@@ -50,10 +50,14 @@ CDE_BUNDLE_FILES = [
 ]
 
 # Column layout for 2014–2022 bundle files (tab-delimited, has header row).
-# Grade columns to sum for K-12 total (excluding ADULT):
-GRADE_COLS_BUNDLE = (
-    ["KDGN"] + [f"GR_{i}" for i in range(1, 13)] + ["UNGR_ELM", "UNGR_SEC"]
-)
+# Confirmed column names from enr202022-v2.txt.
+# ENR_TYPE: 'C' = Census Day combined (P+ST), 'P' = Primary only. Use 'C'.
+# Grade columns for K-12 total (excludes ADULT, excludes TK which predates these files):
+GRADE_COLS_BUNDLE = [
+    "GR_KN", "GR_1", "GR_2", "GR_3", "GR_4", "GR_5",
+    "GR_6", "GR_7", "GR_8", "GR_9", "GR_10", "GR_11", "GR_12",
+    "UNGR_ELM", "UNGR_SEC",
+]
 
 # 2023-24+: new Census Day format (TK as real grade).
 # Verified from https://www.cde.ca.gov/ds/ad/filesenrcensus.asp
