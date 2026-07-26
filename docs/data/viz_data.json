@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T08:05:53.033610+00:00",
+    "generated_at": "2026-07-26T08:16:01.511525+00:00",
     "enrollment_years": [
       2015,
       2016,
@@ -1450,11 +1450,11 @@
         },
         {
           "year": 2025,
-          "total": 198,
+          "total": 99,
           "vl": 0,
-          "low": 4,
-          "mod": 8,
-          "above_mod": 186
+          "low": 2,
+          "mod": 4,
+          "above_mod": 93
         }
       ],
       "cumulative_2018_2023": 118,
@@ -1713,10 +1713,10 @@
         },
         {
           "year": 2023,
-          "total": 8,
-          "vl": 3,
+          "total": 5,
+          "vl": 1,
           "low": 0,
-          "mod": 3,
+          "mod": 2,
           "above_mod": 2
         },
         {
@@ -1728,7 +1728,7 @@
           "above_mod": 0
         }
       ],
-      "cumulative_2018_2023": 10,
+      "cumulative_2018_2023": 7,
       "district_codes": [
         "69039"
       ]
@@ -1808,6 +1808,14 @@
           "low": 12,
           "mod": 12,
           "above_mod": 17
+        },
+        {
+          "year": 2025,
+          "total": 55,
+          "vl": 17,
+          "low": 11,
+          "mod": 11,
+          "above_mod": 16
         }
       ],
       "cumulative_2018_2023": 95,
@@ -1910,11 +1918,11 @@
         },
         {
           "year": 2025,
-          "total": 54,
-          "vl": 14,
-          "low": 14,
-          "mod": 12,
-          "above_mod": 14
+          "total": 27,
+          "vl": 7,
+          "low": 7,
+          "mod": 6,
+          "above_mod": 7
         }
       ],
       "cumulative_2018_2023": 108,
@@ -2058,10 +2066,10 @@
         },
         {
           "year": 2025,
-          "total": 36,
-          "vl": 10,
-          "low": 4,
-          "mod": 22,
+          "total": 18,
+          "vl": 5,
+          "low": 2,
+          "mod": 11,
           "above_mod": 0
         }
       ],
@@ -2228,10 +2236,10 @@
         },
         {
           "year": 2023,
-          "total": 5,
+          "total": 3,
           "vl": 0,
           "low": 0,
-          "mod": 3,
+          "mod": 1,
           "above_mod": 2
         },
         {
@@ -2251,7 +2259,7 @@
           "above_mod": 19
         }
       ],
-      "cumulative_2018_2023": 203,
+      "cumulative_2018_2023": 201,
       "district_codes": [
         "69070"
       ]
@@ -2324,7 +2332,7 @@
       "district_code": "69039",
       "district_name": "San Mateo-Foster City",
       "district_type": "elementary",
-      "cumulative_permits_2018_2023": 10,
+      "cumulative_permits_2018_2023": 7,
       "enrollment_pct_change": -21.98,
       "peak_year": 2016,
       "peak_enrollment": 11976,
@@ -2456,7 +2464,7 @@
       "district_code": "69070",
       "district_name": "South San Francisco Unified",
       "district_type": "unified",
-      "cumulative_permits_2018_2023": 203,
+      "cumulative_permits_2018_2023": 201,
       "enrollment_pct_change": -14.44,
       "peak_year": 2015,
       "peak_enrollment": 9108,
@@ -2537,7 +2545,7 @@
       },
       {
         "year": 2023,
-        "total": 827
+        "total": 822
       },
       {
         "year": 2024,
@@ -2545,7 +2553,7 @@
       },
       {
         "year": 2025,
-        "total": 2164
+        "total": 2075
       }
     ]
   }
